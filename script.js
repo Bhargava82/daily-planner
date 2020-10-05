@@ -10,7 +10,7 @@ $(document).ready(function() {
     let nowHour24 = moment().format('H');
     let nowHour12 = moment().format('h');
   
-    // set times for tesitng after hours
+    // set times for testing after hours
     if (test) {
       nowHour24 = 13;
       nowHour12 = 1;
@@ -36,7 +36,7 @@ $(document).ready(function() {
       // this should only occur on first time the app is loaded in the browser
       // helpfully remind user that lunch is important
       planTextArr = new Array(9);
-      planTextArr[4] = "Picnic lunch outside";
+      planTextArr[4] = "Lunch with Kate Rogers";
     }
   
     if (test) { console.log("full array of plned text",planTextArr); }
@@ -83,7 +83,7 @@ $(document).ready(function() {
       // populate timeBox with time
       $timeBoxSpn.text(`${displayHour} ${ampm}`);
   
-      // insert into col inset into timebox
+      // insert into col inset into time box
       $rowDiv.append($col2TimeDiv);
       $col2TimeDiv.append($timeBoxSpn);
       // STOP building Time box portion of row
