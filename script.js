@@ -131,7 +131,7 @@ $(document).ready(function() {
     };
   
     // function to update row color
-    function updateRowColor ($hourRow,hour) { 
+    function updateRowColor ($hourRow,hour) {
   
       if (test) { console.log("rowColor ",nowHour24, hour); }
   
